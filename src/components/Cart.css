@@ -1,0 +1,70 @@
+#cart{
+    background-color: #c2e0ed;
+    position: absolute;
+    top: 100px;
+    /* height: 60vh; */
+    /* width: 80%; */
+    width: fit-content;
+    max-width: 80%;
+    border-radius: 8px;
+    z-index: 9;
+    padding: 20px;
+
+}
+#cartheading{
+    text-align: center;
+    -webkit-text-stroke: 1px red;
+    margin-bottom: 30px;
+}
+#cartContainer{
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+#cartContainer .card{
+    height: fit-content;
+    width: 200px;
+    gap: 15px;
+}
+#cartContainer .card a{
+    height: 50px;
+}
+#cartContainer .card .img-cont{
+    height: 180px;
+}
+#cartContainer .card button{
+    position: static;
+    font-size: 0.8rem;
+}
+
+@media (max-width:768px) {
+    #cartContainer .card{
+        width: 47%;
+    }
+    #cartContainer .card .img-cont{
+        height: 170px;
+    }
+    /* #cartContainer .card button{
+        font-size: 0.8rem;
+        text-wrap: nowrap;
+        width: 100%;
+    } */
+}
+@media (max-width:500px) {
+    #cartContainer .card{
+        width: 100%;
+    }
+    #cartContainer .card .img-cont{
+        height: 150px;
+    }
+}
+@media (max-width:450px) {
+    #cartContainer .card button{
+        font-size: 0.7rem;
+    }
+}
